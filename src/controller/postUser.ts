@@ -1,4 +1,3 @@
-
 import getRequestData from '../utils/getRequestData';
 import checkIncomingObject from '../utils/checkIncomingObject';
 import { IncomingMessage, ServerResponse } from 'http';
@@ -7,9 +6,11 @@ import ErrorHttp from '../error/ErrorHttp';import { User } from '../types/types'
 ;
 
 const postUsers = async (
-  req: IncomingMessage,
+  usersModel: UsersModel,
   res: ServerResponse,
-  usersModel: UsersModel
+  req: IncomingMessage,
+
+
 ): Promise<void> => {
   try {
     const userObject = await getRequestData(req);

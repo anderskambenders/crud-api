@@ -4,8 +4,8 @@ import ErrorHttp from '../error/ErrorHttp';
 import { UsersModel } from '../model/UsersModel';
 
 const getUsers = async (
-  res: ServerResponse,
   usersModel: UsersModel,
+  res: ServerResponse,
   userId?: string | undefined,
 ) => {
   if (!userId) {
