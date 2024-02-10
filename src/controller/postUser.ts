@@ -6,7 +6,7 @@ import { UsersModel } from '../model/UsersModel';;
 import ErrorHttp from '../error/ErrorHttp';import { User } from '../types/types';
 ;
 
-const postUser = async (
+const postUsers = async (
   req: IncomingMessage,
   res: ServerResponse,
   usersModel: UsersModel
@@ -29,4 +29,4 @@ const postUser = async (
   }
 };
 
-export default postUser;
+export default postUsers;
