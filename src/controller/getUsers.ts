@@ -27,6 +27,7 @@ const getUsers = async (
     throw new ErrorHttp(`User with id ${userId} doesn't exist.`, 404);
   }
   res.writeHead(200, { 'Content-Type': 'application/json' });
+  console.log(user)
   res.end(JSON.stringify(user));
   showRequestStatus(req, 200)
 };
